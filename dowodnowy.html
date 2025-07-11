@@ -127,7 +127,20 @@ body, html {
 }
 
 
-/* #gradient ruleset removed because it was empty */
+#gradient {
+    /* position: relative;
+    bottom: 10px;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    color: #f1f1f1;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    padding: 6px;
+    text-align: center;
+    z-index: 2;
+    border-radius: 0 0 0.5rem 0.5rem;
+    margin: 0; */
+}
 
 .notification {
             position: fixed;
@@ -253,19 +266,18 @@ body, html {
             
             <p style="margin-left: 7px;">Rzeczpospolita<br>Polska</p>
         </div>
-              <img id="user-photo" src="#" alt="User Photo" style="position: relative; display: block; width: 100%; height: 9em;">
-              <script>
-                // Załaduj zdjęcie z localStorage, jeśli istnieje
-                window.addEventListener('DOMContentLoaded', function () {
-                    const savedPhoto = localStorage.getItem("photo");
-                    if (savedPhoto) {
-                        const userPhoto = document.getElementById("user-photo");
-                        if (userPhoto) userPhoto.src = savedPhoto;  // Ustaw zapisane zdjęcie
-                    }
-                });
-                </script>
-            
-            <p style="margin-left: 7px;">Rzeczpospolita<br>Polska</p>
+    </section>
+    <section id="praw">
+        <div class="cwel">
+            <span class="title" id="display-name">Brak danych</span>
+            <span class="description">Imię (imiona)</span>
+        </div>
+        <div class="cwel">
+            <span class="title" id="display-surname">Brak danych</span>
+            <span class="description">Nazwisko</span>
+        </div>
+        <div class="cwel">
+            <span class="title" id="display-nationality">Brak danych</span>
             <span class="description">Obywatelstwo</span>
         </div>
         <div class="cwel">
@@ -637,11 +649,11 @@ padding: 32px 36px;
 
                     </section>
                 </section>
-                            const expiryDateInner = localStorage.getItem("expiryDate");
-                            document.getElementById("expiryDate").innerText = expiryDateInner ? formatDate(expiryDateInner) : "Brak danych";
-                   
-                            const issueDateInner = localStorage.getItem("issueDate");
-                            document.getElementById("issueDate").innerText = issueDateInner ? formatDate(issueDateInner) : "Brak danych";
+            </section>
+        </section>
+    </section>
+</section>
+
 <script>
      document.getElementById("idSeries").textContent = localStorage.getItem("idSeries") || "Brak danych";
 
